@@ -119,3 +119,9 @@ ul>:first-child :nth-child(1){
   font-size: 17px;
   margin-right: 4px;
 }
+.explore>span{
+    font-size: 13px;
+    color:rgb(151, 150, 150);
+    margin-left:4px ;
+    cursor: pointer;
+}
