@@ -1,0 +1,180 @@
+body{
+    font-family: 'Open Sans', Arial;
+}
+#upper{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#left{
+    width:300px;
+    height: auto;
+    margin-left: 35px; 
+    
+}
+#right{
+    display: grid;
+    margin:20px 0px 0px 30px;
+}
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: -20px;
+   
+}
+#bottom>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+}
+#box{
+    border-radius: 5px;
+    border: 1px solid;
+    
+}
+
+#prc{
+    display: flex;
+    color: red;
+    margin-left:5px ;
+}
+#box1{
+    display: flex;
+    color: rgb(70, 70, 70);
+    margin:-30px 0px -30px 0px;
+    margin-left: 5px;
+}
+.sop{
+    text-decoration: line-through;
+}
+img{
+    border-radius: 5px;  
+}
+
+
+#box1+p{
+    color: grey;
+    padding-left: 5px;
+}
+  @media all and (min-width: 400px) and (max-width: 800px) {
+    #bottom {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  p{
+      font-size: 14px;
+      color: grey;
+  }
+  a:hover{
+      text-decoration: underline;
+  }
+  a{
+      text-decoration: none;
+      font-size: 14px;
+      color: grey;
+      margin-top: 10px;
+      
+  }
+  h5{
+      margin-top: -15px;
+      margin-left: 10px;
+  }
+  #left>div{
+      margin-top: -20px;
+      margin-left: 20px;
+  }
+
+  #top{
+      width: auto;
+      height: 150px;
+      padding-left: 10px;
+    
+  }
+  #top1{
+      display: flex;
+  }
+  #top2{
+      display: flex;
+       margin-top: 20px;
+       height: 40px;
+       text-align: center;
+
+  }
+  #inpt{
+      width: 40px;
+      margin-left: 5px;
+      border-radius: 5px;
+      border: 0.05px solid grey;
+  }
+  input{
+    width: 40px;
+    border-radius: 5px;
+    border:0.05px solid grey;
+  }
+  select{
+      margin-left: 30px;
+      width: 100px;
+      color: grey;
+      border-radius: 5px;
+      border: 0.05px solid grey;
+  }
+  .range{
+      width: 100px;
+      margin-left: 20px;
+      border: 0.05px solid rgb(189, 185, 185);
+        display: flex;
+        border-radius: 5px;
+  }
+  .range>div:hover{
+      background-color: grey;
+  }
+  .range>div{
+      border: 0.05px solid grey;
+      width: 20px;
+      background-color: rgb(255, 240, 225);
+  }
+  .small{
+      width: 20px;
+      margin-left: 20px;
+      border: 0.02px solid gray;
+      height: 20px;
+      margin-top: 8px;
+      border-radius: 5px;
+  }
+  #top3{
+      display: flex;
+      margin-top: 10px;
+
+  }
+#top3>div{
+    display: flex;
+    border:.05px solid gray;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+#input{
+    width: 50px;
+    border: 0px;
+}
+#top3>div>p{
+    margin: 5px;
+    margin-top: 12px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+#top3>div+div{
+    width: 20px;
+    margin-left: 20px;
+    height: 20px;
+}
+#top3>div>p:hover{
+    cursor: pointer;
+    color: red;
+}
+
+                    
