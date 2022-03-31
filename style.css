@@ -127,7 +127,7 @@ ul>:first-child :nth-child(1){
     cursor: pointer;
 }
 .footer-main{
- 
+     margin-top: 20px;
     background-color: rgb(233, 233, 233);
 }
 .footer-main>div{
