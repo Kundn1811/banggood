@@ -467,19 +467,18 @@ var electronicData=[
    
 ];
 
-var Discription=JSON.parse(localStorage.getItem("discription"))||[];
+var Discription=JSON.parse(localStorage.getItem("discription")) || [];
+
 electronicData.map(function (elem){
     var box=document.createElement("div");
      box.setAttribute("id","inner");
 
      var img=document.createElement("img");
-     img.style.cursor="pointer";
+     img.src=elem.imgUrl;
      img.setAttribute("class","img")
      img.addEventListener("click", function() {
-         Discription.push(elem);
-         localStorage.setItem("discription",JSON.stringify(Discription));
+         disc(elem);
      })
-     img.src=elem.imgUrl;
 
     var crcy=document.createElement("h3");
      crcy.innerText=elem.curruncy;
@@ -487,11 +486,11 @@ electronicData.map(function (elem){
     var prc=document.createElement("h3");
      prc.innerText=elem.price;
     var box2=document.createElement("div");
-    box2.setAttribute("id","prc")
-    box2.append(crcy,prc)
+    box2.setAttribute("id","prc");
+    box2.append(crcy,prc);
 
     var sop=document.createElement("p");
-    sop.setAttribute("class","sop")
+    sop.setAttribute("class","sop");
      sop.innerText=elem.strikedoffprice;
 
     var dct=document.createElement("p");
@@ -501,23 +500,22 @@ electronicData.map(function (elem){
      box1.append(sop,dct);
 
     var nme=document.createElement("p");
-    nme.setAttribute("class","nme")
-    nme.addEventListener("click", function(){
-        disc(elem)
-    })
-    nme.style.cursor="pointer"
+    nme.setAttribute("class","nme");
+     nme.style.cursor="pointer"
      nme.innerText=elem.name;
+     nme.addEventListener("click", function(){
+        disc(elem);;
+    })
     
      box.append(img,box2,box1,nme);
     
     document.querySelector("#bottom").append(box);
-}
-);
-
-
+});
 
 function disc(elem){
     Discription.push(elem);
-    console.log(elem)
     localStorage.setItem("discription",JSON.stringify(Discription))
+    window.location.href="discriptionpage.html"
 }
+
+

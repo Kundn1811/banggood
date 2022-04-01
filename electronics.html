@@ -58,7 +58,7 @@
                 <span>
                     <span>Hello</span>
                     <div>
-                        <a href="" id="signin">Sign in</a>
+                        <a href="login.html" id="signin">Sign in</a>
                     </div>
                 </span>
             </div>
@@ -97,8 +97,8 @@
         <div id="right">
             <div id="top">
                 <div id="top1">
-                <a href="electronic.html">Home</a>
-                <a href="" style="font-weight: bolder; color: black;">Electronics</a>
+                <a href="index.html" >Home <span><i class='fas fa-angle-right'></i></span></a>
+                <a href="electronics.html" style="font-weight: bolder; color: black;">Electronics</a>
                 </div>
                 <div id="top2">
                     <p>Price</p>
@@ -132,7 +132,11 @@
                         <p>|</p>
                         <p> Reviews</p>
                         <p>|</p>
-                        <input id="input" type="Number" placeholder="Price">
+                        <select id="sortbyprice">
+                            <option value=""><p>Price</p></option>
+                            <option value="">High to Low</option>
+                            <option value="Number">Low to High</option>
+                        </select>
                     </div> 
                     
                      <div class="small"></div>
