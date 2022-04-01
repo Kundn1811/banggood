@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(245,245,245);
+    margin: 0px;
+}
+.navbar{
+    /* border: 1px solid red; */
+    background-color: white;
+}
+.navbar>div{
+    margin-left: 15%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.logo>h1{
+    margin-top: 10px;
+    font-size: 40px;
+    margin-bottom: -5px;
+}
+.logo>h1>span{
+    color: orangered;
+   
+
+}
+.logo>p{
+    line-height: 0px;
+    /* margin-top: -20px; */
+    font-size: 15px;
+    color: gray;
+
+}
+#container{
+   
+    width: 24%;
+    margin: auto;
+    height: auto;
+    margin-top: 50px;
+    padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+#container>a{
+    text-decoration: none;
+    color: gray;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-weight: 300;
+  
+}
+.links>a{
+    text-decoration: none;
+    color: black;
+}
+#active{
+    text-decoration: underline;
+    color: orangered;
+}
+.form>input{
+    width: 92%;
+ 
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: none;
+  
+}
+#submit{
+    background-color: orangered;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+}
+.appAccess{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+.sites{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.sites>a>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
