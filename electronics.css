@@ -50,7 +50,8 @@ body{
     text-decoration: line-through;
 }
 img{
-    border-radius: 5px;  
+    border-radius: 5px;
+    cursor: pointer;  
 }
 
 
