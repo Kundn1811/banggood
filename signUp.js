@@ -33,8 +33,6 @@ function check(data, target) {
         if (data[i].email == target) {
             return true;
         }
-        else {
-            return false;
-        }
     }
+    return false;
 }
