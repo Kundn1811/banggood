@@ -222,7 +222,7 @@ var data = [
     }
     
 ]
-
+var homeData=JSON.parse(localStorage.getItem("homepage")) || [];
 data.map(function(el){
  
 var box = document.createElement("div");
@@ -235,8 +235,17 @@ boxc.append(image);
 var price = document.createElement("p");
 price.textContent = el.price
 var name = document.createElement("p");
-name.textContent = el.name
+name.textContent = el.name;
+// name.addEventListener("click",function(){
+//     disc(el);
+// })
 box.append(boxc,price,name);
-
 document.querySelector(".Rbody").append(box)
 })
+
+// function disc(el){
+//     homeData.push(el);
+//     localStorage.setItem("homepage",JSON.stringify(homeData));
+//     window.location.href="discriptionpage.html";
+// }
+

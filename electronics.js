@@ -515,7 +515,6 @@ electronicData.map(function (elem){
 function disc(elem){
     Discription.push(elem);
     localStorage.setItem("discription",JSON.stringify(Discription))
-    alert("item added to discription")
     window.location.href="discriptionpage.html"
 }
 
