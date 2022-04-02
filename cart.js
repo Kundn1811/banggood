@@ -1,6 +1,8 @@
 var data = JSON.parse(localStorage.getItem("cartDetail"))
 console.log(data);
-
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html";
+})
 var total_price = data.reduce(function(sum,el,index,arr){
      sum +=Number( el.price);
      return sum

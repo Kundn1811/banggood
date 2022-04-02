@@ -1,13 +1,5 @@
 var electronicData=[
     {
-        imgUrl: "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/B3/10/afb268bb-95b0-46b3-9906-456b82ba25ed.jpg.webp",
-        price:40.09,
-        curruncy:"US$",
-        strikedoffprice:"US$40.09",
-        discount:"",
-        name:"RUIZU M7 2.8 Inch Screen 8GB",
-    },
-    {
         imgUrl:"https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/5E/65/eaefeee8-7384-4689-9e48-f8007ffa5daf.jpg.webp",
         price:39.40,
         curruncy:"US$",
@@ -41,7 +33,7 @@ var electronicData=[
     },
     {
         imgUrl:"https://imgaz.staticbg.com/thumb/gallery/oaupload/ser1/banggood/images/C0/B3/4a19158e-4557-4bd7-ab2d-4c16a24ff08a.jpg.webp",
-        price: "34.99",
+        price: 34.99,
         curruncy:"US$",
         strikedoffprice:"US$41.99",
         discount:"17% Off",
@@ -54,6 +46,14 @@ var electronicData=[
         strikedoffprice:"US$120.20",
         discount:"18% Off",
         name:"4Pc BAOFENG UV-5R DUAL BAND",
+    },
+    {
+        imgUrl: "https://imgaz.staticbg.com/thumb/gallery/oaupload/banggood/images/B3/10/afb268bb-95b0-46b3-9906-456b82ba25ed.jpg.webp",
+        price:40.09,
+        curruncy:"US$",
+        strikedoffprice:"US$40.09",
+        discount:"",
+        name:"RUIZU M7 2.8 Inch Screen 8GB",
     },
     {
         imgUrl:"https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/39/82/d47cdf2b-b773-4742-a60b-fec1e47b6df3.jpg.webp",
@@ -469,6 +469,10 @@ var electronicData=[
 
 var Discription=JSON.parse(localStorage.getItem("discription")) || [];
 
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html";
+})
+
 electronicData.map(function (elem){
     var box=document.createElement("div");
      box.setAttribute("id","inner");
@@ -481,10 +485,20 @@ electronicData.map(function (elem){
      })
 
     var crcy=document.createElement("h3");
-     crcy.innerText=elem.curruncy;
     
+     if(document.querySelector(".curncyType").innerText=="INR"){
+        crcy.innerText="₹";
+     }else if(document.querySelector(".curncyType").innerText=="US$"){
+         crcy.innerText=elem.curruncy;
+     }
+
     var prc=document.createElement("h3");
-     prc.innerText=elem.price;
+    if(document.querySelector(".curncyType").innerText=="INR"){
+        prc.innerText=eval(Math.ceil(elem.price*75.76));
+     }else if(document.querySelector(".curncyType").innerText=="UD$")
+         {
+             prc.innerText=elem.price;
+         }
     var box2=document.createElement("div");
     box2.setAttribute("id","prc");
     box2.append(crcy,prc);
@@ -513,9 +527,14 @@ electronicData.map(function (elem){
 });
 
 function disc(elem){
-    Discription.push(elem);
-    localStorage.setItem("discription",JSON.stringify(Discription))
-    window.location.href="discriptionpage.html"
+    console.log(Discription)
+
+        Discription.push(elem);
+        localStorage.setItem("discription",JSON.stringify(Discription));
+        window.location.href="discriptionpage.html";
+       
+    
+   
 }
 
 

@@ -4,9 +4,10 @@ body{
     background-color: rgb(250, 244, 236);
 }
 .navbar{
-    /* border: 1px solid red; */
+    /* border: 1px solid red; */ 
     background-color: rgb(45,45,56);
     color: white;
+    width: 100%;
 }
 .navbar > :first-child{
     display: flex;
@@ -20,6 +21,7 @@ body{
 }
 .logo{
   color: white;
+  cursor:pointer;
 }
 .logo>h1>span{
     color: rgb(253, 81, 29);
