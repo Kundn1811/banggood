@@ -62,7 +62,7 @@ img{
 }
   @media all and (min-width: 400px) and (max-width: 800px) {
     #bottom{
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(2,1fr);
       grid-template-rows: auto;
     }
   }

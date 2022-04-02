@@ -5,13 +5,17 @@ var flashdeal=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"11%Off",
+        name:"Women A-Line Ruffle Low Cut Sleeveless Maxi Swing Dress - S Black"
+        
     },
+
     {
         imgUrl:"https://imgaz2.staticbg.com/thumb/view/oaupload/ser1/banggood/images/10/17/8a91e39a-0594-43d3-a9f3-19f2d0060453.jpg.webp",
         price: 921.94,
         curruncy:"₹",
         strikedoffprice:"",
         discount:"11%Off",
+        name:"Women Vintage Plaid Print Button Front O-Neck Short Sleeve Loose Casual Shirt Dress With Pocket",
     },
     {
         imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/82/BE/67df163b-c2c0-4ad8-b8cf-d43ad842c99f.jpg.webp",
@@ -19,6 +23,8 @@ var flashdeal=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"45%Off",
+        name:"Floral Embroidery Lapel Collar Long Sleeve Button Daily Casual Maxi Shirt Dress For Women",
+
     },
     {
         imgUrl:"https://imgaz2.staticbg.com/thumb/view/oaupload/banggood/images/29/F4/5fb68f6b-d69e-42a3-9e28-6fd3057b8278.jpg.webp",
@@ -26,6 +32,8 @@ var flashdeal=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"27%Off",
+        name:"Women Leopard Print Lapel Long Sleeve Side Pockets Shirt Maxi Dress",
+
     },
     {
         imgUrl:"https://imgaz2.staticbg.com/thumb/view/oaupload/banggood/images/D8/48/5388d425-4972-4015-951f-3f89f723db39.jpg.webp",
@@ -33,6 +41,7 @@ var flashdeal=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"43%Off",
+        name:"Women 100% Cotton V-Neck Floral",
     },
     {
         imgUrl:"https://imgaz1.staticbg.com/thumb/view/oaupload/banggood/images/9C/A0/20298b1c-1bcd-4db2-9322-4cf399e1aa7d.jpg.webp",
@@ -40,6 +49,7 @@ var flashdeal=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"29%Off",
+        name:"Unisex Portable Rectangular Half Lower Frame Reading Glasses Push-pull Box Anti-blue Light Presbyopia Glasses",
     },
 
 ];
@@ -51,6 +61,7 @@ var newarrivals=[
         curruncy:"",
         strikedoffprice:"₹2,613.57",
         discount:"",
+        name:"Women Off Shoulder Puff Sleeve P ",
     },
 
     {
@@ -59,6 +70,7 @@ var newarrivals=[
         curruncy:"",
         strikedoffprice:"₹2,613.57",
         discount:"",
+        name:"Floral Puff Sleeve Zipper Pleated M ",
     },
     {
         imgUrl:"https://imgaz1.staticbg.com/thumb/view/oaupload/banggood/images/14/AB/a1f7968d-83b2-4817-97f7-47472d7b23da.jpg.webp",
@@ -66,6 +78,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹2,690.46",
         discount:"",
+        name:" Women Casual Loose Patchwork O-Neck 3/4 Sleeve Dress",
     },
     {
         imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/42/D6/bec87c98-5f8a-4315-8288-b83e2a717bab.jpg.webp",
@@ -73,6 +86,9 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹2,613.57",
         discount:"",
+        name:"Women Distressed Solid Color Ela",
+
+
     },
     {
         imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/36/F6/acf5d233-8514-4172-97c2-2049eae0172b.jpg.webp",
@@ -80,13 +96,16 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹2,613.57",
         discount:"",
+        name:"Women Pure Color Lapel Chest Pocket Loose Casual Long Sleeve Shirts",
+        
     },
     {
         imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/1D/28/3ea67c01-21a6-42e7-b2f5-c8332e821539.jpg.webp",
         price: 2306.00,
         curruncy:"₹",
         strikedoffprice:"₹2,382.89",
-        discount:"",
+        name:"Women Vintage Geometric Print ",
+
     },
 
 ]
@@ -247,6 +266,7 @@ flashdeal.map(function (el){
 
     var dct=document.createElement("p");
      dct.innerText=el.discount;
+     
      dct.style.backgroundColor="#ff6e26"
      dct.style.color="white";
      var box1=document.createElement("div");
@@ -286,6 +306,7 @@ newarrivals.map(function(el){
 
    var dct=document.createElement("p");
     dct.innerText=el.discount;
+    name:
     var box1=document.createElement("div");
     box1.setAttribute("id","box1");
     box1.append(sop,dct);
