@@ -241,7 +241,7 @@ var mobobj=[{
         
     
         var price = document.createElement("p");
-        price.innerText = elem.price;
+        price.innerText =elem.price;
         var strikeoff=document.createElement("p");
         strikeoff.innerText=elem.strikeoff_price;
         strikeoff.style.textDecoration="line-through";
