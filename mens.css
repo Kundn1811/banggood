@@ -18,29 +18,29 @@ body{
    color: silver;
 }
 #top2nd{
-    display: flex;
-    gap: 20px;
     background-color: #f5f6f8;
-    padding-right: 40px;
+    width: 80%;
+    margin: auto;
 }
 #left{
-    width: 20%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     background-color: white;
+    margin-bottom: 10px;
     border-radius: 5px;
-    margin-left: 50px;
-    padding-top: 5px;
+    
 }
-#left>a{
-    margin: 20px;
-    text-decoration: none;
+#left>p{
     color: rgb(102, 94, 94);
     font-size: 15px;
-    font-family: 'Open Sans', Arial;
-  cursor: pointer;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    padding-top: 8px;
 }
-#right{
-    width: 80%;
+#left>p:hover{
+    background-color: silver;
+   border-radius: 5px;
 }
 img{
     width:100%;
@@ -48,18 +48,21 @@ img{
     cursor: pointer;
 }
 #top3rd{
-    margin-left: 40px;
+    width: 80%;
     margin-top: 20px;
     background-color: white;
     border-radius: 5px;
     padding-left: 5px;
+    margin: auto;
 }
 #flash{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: auto;
     gap: 20px;
     border-radius: 5px;
+    margin: auto;
 }
 #flash>div{
     background-color: rgba(255, 255, 255, 0.966);
@@ -82,7 +85,8 @@ img{
     padding-left: 5px;
 }
 #top4rth{
-    margin-left: 40px;
+    width: 80%;
+    margin: auto;
     margin-top: 20px;
     background-color: white;
     border-radius: 5px;
@@ -117,7 +121,8 @@ img{
     color: silver;
 }
 #top5th{
-    margin-left: 40px;
+    width: 80%;
+    margin: auto;
     margin-top: 20px;
     background-color: white;
     border-radius: 5px;
@@ -125,7 +130,7 @@ img{
 }
 #recomend{
     display:grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 20px;
     padding-bottom:30px;
