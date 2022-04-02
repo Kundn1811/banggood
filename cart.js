@@ -78,7 +78,7 @@ function removeItem(el,i){
 function increment(quantity,price){
     var a = quantity.innerText
     a++
-    total_price += a*price;
+    total_price += Number(price)
    console.log(total_price)
   
   
@@ -89,10 +89,15 @@ function decrement(quantity,price){
     var b = quantity.innerText;
     if(b>0){
          b--;
-         total_price -= b*price;
+         total_price -= Number(price)
          document.querySelector(".pric").innerText = total_price;
     quantity.innerText= b ;  
     }
  
+}
+document.querySelector("#container>div:nth-child(3)>button").addEventListener("click",Paymentfun);
+
+function Paymentfun(){
+    window.location.href = "checkout.html";
 }
 

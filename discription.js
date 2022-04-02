@@ -1,9 +1,12 @@
 var disData=JSON.parse(localStorage.getItem("discription"));
 var buy=JSON.parse(localStorage.getItem("buyData")) || [];
 
+var displaydata = [];
+displaydata.push(disData[disData.length-1]);
+
 var cartData=JSON.parse(localStorage.getItem("cartDetail")) || [];
 
-disData.map( function(element){
+displaydata.map( function(element){
    document.querySelector(".aname").innerText=element.name;
    var img=document.createElement("img");
    img.setAttribute("class","img")
@@ -83,6 +86,8 @@ window.location.href=" ";
 function addtocart(element){
   // console.log(element);
    cartData.push(element)
+   document.querySelector(".addcart").innerText = "Added to cart";
+   
    localStorage.setItem("cartDetail",JSON.stringify(cartData))
   
 }
