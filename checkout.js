@@ -1,4 +1,7 @@
 document.querySelector(".formm").addEventListener("submit",checkfun);
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html"
+})
 function checkfun(){
   event.preventDefault();
   console.log("in function")

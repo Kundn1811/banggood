@@ -5,7 +5,7 @@ var flash=[
    curruncy:"₹",
    strikedoffprice:"",
    discount:"24%Off",
-   name:"",
+   name:"Broun Half Sleave Shirt",
 },
 {
     imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/52/CA/35d85328-89c7-454d-b09d-9b79ccba8e52.jpeg.webp",
@@ -13,7 +13,7 @@ var flash=[
     curruncy:"₹",
     strikedoffprice:"",
     discount:"36%Off",
-    name:"",
+    name:"shirt kolhapuri",
  },
  {
     imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/C6/77/2f937101-c366-4fed-b67c-161c0aad12bb.jpg.webp",
@@ -21,7 +21,7 @@ var flash=[
     curruncy:"₹",
     strikedoffprice:"",
     discount:"29%Off",
-    name:"",
+    name:"printed light shirt",
  },
  {
     imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/90/37/35f7d111-0ad0-48b8-a18f-530c006ad685.jpg.webp",
@@ -29,7 +29,7 @@ var flash=[
     curruncy:"₹",
     strikedoffprice:"",
     discount:"26%Off",
-    name:"",
+    name:"Half shirt",
  },
 {
    imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/CB/A6/69587d63-ea50-4420-96b4-4b4d724bed45.jpg.webp",
@@ -37,7 +37,7 @@ var flash=[
    curruncy:"₹",
    strikedoffprice:"",
    discount:"24%Off",
-   name:"",
+   name:"Broun Bottom wear",
 },
 {
     imgUrl:"https://imgaz1.staticbg.com/thumb/view/oaupload/banggood/images/6B/D6/2b5d5d0b-a7c9-46c0-8c2b-fd401a4db3ab.jpg.webp",
@@ -45,7 +45,7 @@ var flash=[
     curruncy:"₹",
     strikedoffprice:"",
     discount:"36%",
-    name:"",
+    name:"Yellow Half Sleave shirt",
  },
 
 ];
@@ -56,7 +56,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹2203.68",
         discount:"",
-        name:"",
+        name:"Floral Print Long Sleave shirt",
     },
     {
         imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/15/F1/2da47b7e-5e7f-43c4-a1e7-aae818dbbf96.jpg.webp",
@@ -64,7 +64,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹1,651.99",
         discount:"",
-        name:"",
+        name:"Men retro style patc",
     },
     {
         imgUrl:"https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/6D/FD/c84f2423-e4dc-47f2-ab04-5ddfc20936e3.jpg.webp",
@@ -72,7 +72,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹1,872.66",
         discount:"",
-        name:"",
+        name:"Men Flower & leaf Shirt",
     },
     {
         imgUrl:"https://imgaz2.staticbg.com/thumb/view/oaupload/banggood/images/0B/C9/3c6aa132-995e-487b-a264-d1616001d949.jpg.webp",
@@ -80,7 +80,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹1,872.66",
         discount:"",
-        name:"",
+        name:"Men Floral Print color Hoddie",
     },
     {
         imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/2F/55/d6d8d6c3-6f3a-4860-a737-a00b1bad854c.jpg.webp",
@@ -88,7 +88,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"",
         discount:"",
-        name:"",
+        name:"Mens petch work t-shirt",
     },
     {
         imgUrl:"https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/FE/E8/7325afac-cf18-42ff-a9ec-65c118bb5d6d.jpg.webp",
@@ -96,7 +96,7 @@ var newarrivals=[
         curruncy:"₹",
         strikedoffprice:"₹1,872.66",
         discount:"",
-        name:"",
+        name:"Mens Printed Floral Shirt",
     }
 
 ]
