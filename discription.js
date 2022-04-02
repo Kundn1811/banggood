@@ -48,23 +48,23 @@ displaydata.map( function(element){
     var qtynme=document.createElement("span");
     qtynme.innerText="Qty";
 
-    var decriment=document.createElement("div");
-    decriment.style.cursor="pointer"
-    decriment.innerText="-";
+   //  var decriment=document.createElement("div");
+   //  decriment.style.cursor="pointer"
+   //  decriment.innerText="-";
      
-    var display=document.createElement("input");
-    display.setAttribute("class","input");
-    display.setAttribute("type","Number")
+   //  var display=document.createElement("input");
+   //  display.setAttribute("class","input");
+   //  display.setAttribute("type","Number")
 
-    var incriment=document.createElement("div");
-    incriment.style.cursor="pointer"
-    incriment.textContent="+";
+   //  var incriment=document.createElement("div");
+   //  incriment.style.cursor="pointer"
+   //  incriment.textContent="+";
 
    
-    qty.append(decriment,display,incriment);
-    var qtydiv=document.createElement("div");
-    qtydiv.setAttribute("class","qname")
-    qtydiv.append(qtynme,qty);
+   //  qty.append(decriment,display,incriment);
+   //  var qtydiv=document.createElement("div");
+   //  qtydiv.setAttribute("class","qname")
+   //  qtydiv.append(qtynme,qty);
 
    var Buy=document.createElement("button");
    Buy.innerText="Buy Now";
@@ -81,8 +81,8 @@ displaydata.map( function(element){
    })
    var box4=document.createElement("div");
    box4.setAttribute("id","box4")     
-    box4.append(Buy,adtc)
-document.querySelector("#right").append(nme,box2,box3,qtydiv,box4)
+    box4.append(Buy,adtc);
+document.querySelector("#right").append(nme,box2,box3,box4)//qtydiv
 });
 function addTobuy(){
 buy.push(element);
@@ -94,7 +94,7 @@ function addtocart(element){
   // console.log(element);
    cartData.push(element)
    document.querySelector(".addcart").innerText = "Added to cart";
-   
+   document.querySelector(".head-cart>a>i").style.color="orange";
    localStorage.setItem("cartDetail",JSON.stringify(cartData))
   
 }

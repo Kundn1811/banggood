@@ -260,6 +260,89 @@ var mobileData=[{
     document.querySelector(".logo").addEventListener("click",function(){
         window.location.href="index.html";
     })
+
+    function sort(){
+        var selected = document.querySelector("#sortbyprice").value;
+        console.log(selected);
+        if(selected =="htl"){
+            mobileData.sort(function(a,b){
+                return b.price - a.price;
+            })
+            display(mobileData);
+        }
+        if (selected == "lth") {
+            mobileData.sort(function (a, b) {
+              return a.price - b.price
+      
+            })
+          
+            display(mobileData);
+            
+          }
+    }
+    
+    function display(mobileData){
+        document.querySelector("#bottom").innerHTML="";
+        mobileData.map(function (elem){
+
+        
+
+            var box=document.createElement("div");
+             box.setAttribute("id","inner");
+        
+             var img=document.createElement("img");
+             img.src=elem.imgUrl;
+             img.setAttribute("class","img")
+             img.addEventListener("click", function() {
+                 disc(elem);
+             })
+        
+            var crcy=document.createElement("h3");
+            
+             if(document.querySelector(".curncyType").innerText=="INR"){
+                crcy.innerText="₹";
+             }else if(document.querySelector(".curncyType").innerText=="US$"){
+                 crcy.innerText=elem.curruncy;
+             }
+        
+            var prc=document.createElement("h3");
+            if(document.querySelector(".curncyType").innerText=="INR"){
+                prc.innerText=elem.price;
+             }else if(document.querySelector(".curncyType").innerText=="UD$")
+                 {
+                     prc.innerText=elem.price;
+                 }
+            var box2=document.createElement("div");
+            box2.setAttribute("id","prc");
+            box2.append(crcy,prc);
+        
+            var sop=document.createElement("p");
+            sop.setAttribute("class","sop");
+             sop.innerText=elem.strikedoffprice;
+        
+            var dct=document.createElement("p");
+             dct.innerText=elem.discount;
+             var box1=document.createElement("div");
+             box1.setAttribute("id","box1");
+             box1.append(sop,dct);
+        
+            var nme=document.createElement("p");
+            nme.setAttribute("class","nme");
+             nme.style.cursor="pointer"
+             nme.innerText=elem.name;
+             nme.addEventListener("click", function(){
+                disc(elem);;
+            })
+            
+             box.append(img,box2,box1,nme);
+            
+            document.querySelector("#bottom").append(box);
+        });
+
+    }
+
+
+
     
     mobileData.map(function (elem){
         var box=document.createElement("div");

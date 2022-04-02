@@ -83,7 +83,7 @@ function increment(quantity,price){
     total_price += Number(price)
    console.log(total_price)
   
-  
+   document.querySelector(".price").innerText = total_price;
    document.querySelector(".pric").innerText = total_price;
     quantity.innerText= a ;
 }
@@ -92,14 +92,19 @@ function decrement(quantity,price){
     if(b>0){
          b--;
          total_price -= Number(price)
+         document.querySelector(".price").innerText = total_price;
          document.querySelector(".pric").innerText = total_price;
     quantity.innerText= b ;  
     }
- 
+    quantity.innerText= b ; 
 }
 document.querySelector("#container>div:nth-child(3)>button").addEventListener("click",Paymentfun);
 
 function Paymentfun(){
+    if(total_price==0){
+        alert("No item in Cart")
+    }else{
     window.location.href = "checkout.html";
+}
 }
 
