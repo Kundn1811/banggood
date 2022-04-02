@@ -1,5 +1,9 @@
 document.querySelector("form").addEventListener("submit", myfunction);
 var signData = JSON.parse(localStorage.getItem("userDetail")) || [];
+
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html"
+})
 function myfunction() {
     event.preventDefault();
     // console.log("submit") working

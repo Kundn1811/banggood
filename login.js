@@ -1,5 +1,9 @@
 var data = JSON.parse(localStorage.getItem("userDetail"));
 
+
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html"
+})
 document.querySelector("form").addEventListener("submit", logfun);
   //console.log(data)
 function logfun() {
