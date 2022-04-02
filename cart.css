@@ -153,8 +153,11 @@ body {
     background-color: orangered;
     border: none;
     margin-left: 5px;
+    cursor: pointer;
 }
-
+#container>div:nth-child(3)>button:hover{
+    background-color: rgba(230, 48, 16, 0.966);
+}
 #container>div:nth-child(4) {
     grid-area: d;
     
