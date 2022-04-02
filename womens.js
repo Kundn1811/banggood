@@ -104,6 +104,7 @@ var newarrivals=[
         price: 2306.00,
         curruncy:"₹",
         strikedoffprice:"₹2,382.89",
+        discount:"",
         name:"Women Vintage Geometric Print ",
 
     },
@@ -266,7 +267,7 @@ flashdeal.map(function (el){
 
     var dct=document.createElement("p");
      dct.innerText=el.discount;
-     
+
      dct.style.backgroundColor="#ff6e26"
      dct.style.color="white";
      var box1=document.createElement("div");
@@ -306,7 +307,6 @@ newarrivals.map(function(el){
 
    var dct=document.createElement("p");
     dct.innerText=el.discount;
-    name:
     var box1=document.createElement("div");
     box1.setAttribute("id","box1");
     box1.append(sop,dct);
