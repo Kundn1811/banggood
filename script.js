@@ -223,6 +223,10 @@ var data = [
     
 ]
 var homeData=JSON.parse(localStorage.getItem("homepage")) || [];
+
+document.querySelector(".logo").addEventListener("click",function(){
+    window.location.href="index.html";
+})
 data.map(function(el){
  
 var box = document.createElement("div");

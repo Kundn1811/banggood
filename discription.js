@@ -1,9 +1,17 @@
 var disData=JSON.parse(localStorage.getItem("discription"));
+var displaydata=[]
+
+displaydata.push(disData[disData.length-1])
+console.log(displaydata)
 var buy=JSON.parse(localStorage.getItem("buyData")) || [];
 
 var cartData=JSON.parse(localStorage.getItem("cart")) || [];
 
-disData.map( function(element){
+document.querySelector(".logo").addEventListener("click",function(){
+   window.location.href="index.html";
+})
+
+displaydata.map( function(element){
    document.querySelector(".aname").innerText=element.name;
    var img=document.createElement("img");
    img.setAttribute("class","img")
@@ -65,8 +73,7 @@ disData.map( function(element){
    var adtc=document.createElement("button");
    adtc.innerText="Add to Cart"
    adtc.setAttribute("class","addcart")
-
-
+   
    var box4=document.createElement("div");
    box4.setAttribute("id","box4")     
     box4.append(Buy,adtc)
@@ -80,5 +87,6 @@ window.location.href=" ";
 function addtocart(){
    cartData.push(element)
    localStorage.setItem("cart",JSON.stringify(cartData))
-   window.location.href=" ";
+   adtc.innerText="Added to cart"
+   alert("Products is Added to cart");
 }
