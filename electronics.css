@@ -179,5 +179,8 @@ img{
     cursor: pointer;
     color: red;
 }
-
+.head-cart>a{
+    color: white;
+    font-size: 35px;
+}
                     

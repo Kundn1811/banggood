@@ -1,9 +1,12 @@
 var disData=JSON.parse(localStorage.getItem("discription"));
 var buy=JSON.parse(localStorage.getItem("buyData")) || [];
 
-var cartData=JSON.parse(localStorage.getItem("cart")) || [];
+var displaydata = [];
+displaydata.push(disData[disData.length-1]);
 
-disData.map( function(element){
+var cartData=JSON.parse(localStorage.getItem("cartDetail")) || [];
+
+displaydata.map( function(element){
    document.querySelector(".aname").innerText=element.name;
    var img=document.createElement("img");
    img.setAttribute("class","img")
@@ -65,7 +68,9 @@ disData.map( function(element){
    var adtc=document.createElement("button");
    adtc.innerText="Add to Cart"
    adtc.setAttribute("class","addcart")
-
+   adtc.addEventListener("click",function(){
+      addtocart(element);
+   })
 
    var box4=document.createElement("div");
    box4.setAttribute("id","box4")     
@@ -77,8 +82,12 @@ buy.push(element);
 localStorage.setItem("buyData",JSON.stringify(buy))
 window.location.href=" ";
 }
-function addtocart(){
+
+function addtocart(element){
+  // console.log(element);
    cartData.push(element)
-   localStorage.setItem("cart",JSON.stringify(cartData))
-   window.location.href=" ";
+   document.querySelector(".addcart").innerText = "Added to cart";
+   
+   localStorage.setItem("cartDetail",JSON.stringify(cartData))
+  
 }
