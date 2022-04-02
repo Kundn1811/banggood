@@ -116,3 +116,6 @@ p{
     gap: 5px;
     align-items: center;
 }
+.head-cart>a>i{
+   color: white;
+}

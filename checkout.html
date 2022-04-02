@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>checkout form</title>
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+	<div class="navbar">
+        <div class="logo">
+            <h1>Ban<span>gg</span>ood</h1>
+            <p>Global leading online shop</p>
+        </div>
+    </div>
+<header>
+	<div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				Full name
+				<input type="text" name="" placeholder="Enter name">
+				Email
+				<input type="text" name="" placeholder="Enter email">
+
+				Address
+				<input type="text" name="" placeholder="Enter address">
+				
+				City
+				<input type="text" name="" placeholder="Enter City">
+				<div id="zip">
+					<label>
+						State
+						<select>
+							<option>Choose State..</option>
+							<option>Maharashtra</option>
+							<option>Bihar</option>
+							<option>Uttar Pradesh</option>
+							<option>Madhya Pradesh</option>
+						</select>
+					</label>
+						<label>
+						Zip code
+						<input type="number" name="" placeholder="Zip code">
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="right">
+			<h3>PAYMENT</h3>
+			<form class="formm">
+				Accepted Card <br>
+				<img src="https://cdn.pixabay.com/photo/2016/04/01/11/00/bank-1300155__340.png" width="100">
+				<img src="https://cdn.pixabay.com/photo/2015/11/23/10/52/ec-1058106__340.png" width="50">
+				<br><br>
+
+				Credit card number
+			<input type="text" class="cardno" placeholder="0000 0000 0000 0000">
+				
+				Exp month
+				<input type="text" class="doc" placeholder="Enter Month">
+				<div id="zip">
+					<label>
+						Exp year
+						<select>
+							<option>Choose Year..</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+						</select>
+					</label>
+						<label>
+						CVV
+						<input type="number" class="cvv" placeholder="000">
+						<input type="submit" class="btn" value="Proceed to Payment">
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+</header>
+</body>
+</html>
+<script src="checkout.js"></script>

@@ -183,5 +183,8 @@ img{
     cursor: pointer;
     color: #ff6e26;
 }
-
+.head-cart>a{
+    color: white;
+    font-size: 35px;
+}
                     
