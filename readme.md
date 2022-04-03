@@ -5,7 +5,7 @@
 <h1>About our Project</h1>
  <p>We try to build the clone of Baanggood website,Masai School gives us this opportunity to explore in a construct week</p>
 
- <p>This is the final product link :--</p>
+ <p>This is the final product link :https://kundn1811.github.io/banggood/</p>
 
  <h2>Our teammates</h2>
  <li>Geeta Prakash Rana</li>
